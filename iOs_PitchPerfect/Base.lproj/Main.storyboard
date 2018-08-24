@@ -26,12 +26,15 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Flh-PT-mja"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-KY-WVo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4f-KY-WVo">
                                 <rect key="frame" x="137" y="385" width="102" height="30"/>
                                 <state key="normal" title="Stop recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WH8-Vz-Fye"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbE-ea-91P">
-                                <rect key="frame" x="136" y="356" width="102" height="21"/>
+                                <rect key="frame" x="137" y="356" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,10 +42,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="i4f-KY-WVo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pbE-ea-91P" secondAttribute="leading" id="B8n-Id-zoh"/>
                             <constraint firstItem="pbE-ea-91P" firstAttribute="top" secondItem="0tB-WA-wof" secondAttribute="bottom" constant="8" symbolic="YES" id="Ell-Lx-fu0"/>
                             <constraint firstItem="0tB-WA-wof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fq6-Bx-BES"/>
                             <constraint firstItem="0tB-WA-wof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IgM-Jg-Oa5"/>
                             <constraint firstItem="0tB-WA-wof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VNm-ly-hxZ"/>
+                            <constraint firstAttribute="trailing" secondItem="i4f-KY-WVo" secondAttribute="trailing" constant="136" id="gI7-cx-JXY"/>
                             <constraint firstItem="0tB-WA-wof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mrF-Ts-Wbr"/>
                             <constraint firstItem="pbE-ea-91P" firstAttribute="centerX" secondItem="0tB-WA-wof" secondAttribute="centerX" id="rrS-ma-xR8"/>
                             <constraint firstItem="i4f-KY-WVo" firstAttribute="top" secondItem="pbE-ea-91P" secondAttribute="bottom" constant="8" symbolic="YES" id="sDK-WT-5o6"/>
