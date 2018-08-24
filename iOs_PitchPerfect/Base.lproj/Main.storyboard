@@ -42,15 +42,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i4f-KY-WVo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pbE-ea-91P" secondAttribute="leading" id="B8n-Id-zoh"/>
-                            <constraint firstItem="pbE-ea-91P" firstAttribute="top" secondItem="0tB-WA-wof" secondAttribute="bottom" constant="8" symbolic="YES" id="Ell-Lx-fu0"/>
-                            <constraint firstItem="0tB-WA-wof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fq6-Bx-BES"/>
-                            <constraint firstItem="0tB-WA-wof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IgM-Jg-Oa5"/>
-                            <constraint firstItem="0tB-WA-wof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VNm-ly-hxZ"/>
-                            <constraint firstAttribute="trailing" secondItem="i4f-KY-WVo" secondAttribute="trailing" constant="136" id="gI7-cx-JXY"/>
-                            <constraint firstItem="0tB-WA-wof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mrF-Ts-Wbr"/>
-                            <constraint firstItem="pbE-ea-91P" firstAttribute="centerX" secondItem="0tB-WA-wof" secondAttribute="centerX" id="rrS-ma-xR8"/>
-                            <constraint firstItem="i4f-KY-WVo" firstAttribute="top" secondItem="pbE-ea-91P" secondAttribute="bottom" constant="8" symbolic="YES" id="sDK-WT-5o6"/>
+                            <constraint firstItem="0tB-WA-wof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GG8-Wa-LkU"/>
+                            <constraint firstItem="i4f-KY-WVo" firstAttribute="centerX" secondItem="pbE-ea-91P" secondAttribute="centerX" id="XSD-VZ-fsp"/>
+                            <constraint firstItem="0tB-WA-wof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aO1-Pj-azO"/>
+                            <constraint firstItem="pbE-ea-91P" firstAttribute="top" secondItem="0tB-WA-wof" secondAttribute="bottom" constant="8" id="fEJ-bi-0gE"/>
+                            <constraint firstItem="pbE-ea-91P" firstAttribute="centerX" secondItem="0tB-WA-wof" secondAttribute="centerX" id="nhJ-Cg-jGh"/>
+                            <constraint firstItem="i4f-KY-WVo" firstAttribute="top" secondItem="pbE-ea-91P" secondAttribute="bottom" constant="8" id="yBW-jt-sQH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
