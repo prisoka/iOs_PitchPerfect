@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation // framework that contains the AVAudioRecorder
 
-class RecordSoundsViewController: UIViewController {
+// a class in Swift can only inherit from ONE single superclass, but it can conform to as many as protocols as we want by listing them separated by coma.
+class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     // add property AVAudioRecorder which gives the user the ability to use and ref. the audioRecorder in multiple places
     var audioRecorder: AVAudioRecorder!
@@ -42,7 +43,6 @@ class RecordSoundsViewController: UIViewController {
         //the next 2 lines actually combines them dirPath and recordingName to create a full path to the file:
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
-        print(filePath)
         
         // now a audio session is set up using AVAudioSession.sharedInstance, created by default once app starts running
         let session = AVAudioSession.sharedInstance()
@@ -51,6 +51,8 @@ class RecordSoundsViewController: UIViewController {
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
         
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        // tell the AVAudioRecorderDelegate that the RecordSoundsViewController can act as its delegate
+        audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
@@ -66,6 +68,11 @@ class RecordSoundsViewController: UIViewController {
         // and set the shared AVAudioSession to inactive
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
+    }
+    
+    // function to call the stopRecording Segue that was set up, and move to the audioplayback scene
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        print("Finished recording")
     }
     
 }
