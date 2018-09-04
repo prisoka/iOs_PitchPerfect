@@ -80,5 +80,18 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
     
+    // prepare for Segue and receiving data: before Storyboard executes the segue, it will call our RecordSoundsViewController to prepare for that segue. In preparing, the RecordSoundsViewController will store away the path to the recorded audio.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 1st we check if the Segue that we want, that it has the stopRecording identifier that we set up in the storyboard
+        if segue.identifier == "stopRecording" {
+            // then we grab the ViewController that we were transitioning to
+            let playSoundsVc = segue.destination as! PlaySoundsViewController
+            //next grab the sender
+            let recordedAudioUrl = sender as! URL
+            // set the recordedAudioUrl in the PlaySoundsViewController, and we are ready for play back
+            playSoundsVc.recordedAudioUrl = recordedAudioUrl
+        }
+    }
+    
 }
 
