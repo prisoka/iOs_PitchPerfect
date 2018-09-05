@@ -15,6 +15,7 @@
 		26F319CD212F798D0051F533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F319CB212F798D0051F533 /* LaunchScreen.storyboard */; };
 		26F319D8212F798E0051F533 /* iOs_PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F319D7212F798E0051F533 /* iOs_PitchPerfectTests.swift */; };
 		26F319E3212F798E0051F533 /* iOs_PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F319E2212F798E0051F533 /* iOs_PitchPerfectUITests.swift */; };
+		26F9DFD4213F715B0035F1A5 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9DFD3213F715B0035F1A5 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		26F319DE212F798E0051F533 /* iOs_PitchPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOs_PitchPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F319E2212F798E0051F533 /* iOs_PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOs_PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		26F319E4212F798E0051F533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F9DFD3213F715B0035F1A5 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				26F319CE212F798D0051F533 /* Info.plist */,
 				260A28422130B00300FBDE8D /* Assets.xcassets */,
 				26685A8A213F054100988B68 /* PlaySoundsViewController.swift */,
+				26F9DFD3213F715B0035F1A5 /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = iOs_PitchPerfect;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F319C5212F798C0051F533 /* RecordSoundsViewController.swift in Sources */,
+				26F9DFD4213F715B0035F1A5 /* PlaySoundsViewController+Audio.swift in Sources */,
 				26685A8B213F054100988B68 /* PlaySoundsViewController.swift in Sources */,
 				26F319C3212F798C0051F533 /* AppDelegate.swift in Sources */,
 			);
