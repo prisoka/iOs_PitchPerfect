@@ -1,9 +1,8 @@
 //
-//  File.swift
-//  iOs_PitchPerfect
+//  PlaySoundsViewController+Audio.swift
+//  PitchPerfect
 //
-//  Created by Priscilla Okawa on 4/9/18.
-//  Copyright © 2018 Priscilla Okawa. All rights reserved.
+//  Copyright Â© 2016 Udacity. All rights reserved.
 //
 
 import UIKit
